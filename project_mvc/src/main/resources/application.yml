@@ -1,0 +1,26 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/project2305_db?characterEncoding=UTF-8
+    username: root
+    password: cz148313
+  redis:
+    host: 127.0.0.1
+    port: 6379
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+  type-aliases-package: com.example.project2305.pojo  #  注意：对应实体类的路径
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印mybatis-plus的sql语句
+    #驼峰命名规则
+    map-underscore-to-camel-case: true
+baidu_translate:
+  appid: 20230301001581195
+  securityKey: FBeyn7tLaYsMDlXspF7G
+#file:
+#  upload:
+#    url:D:/softwareData/ideaProjects/

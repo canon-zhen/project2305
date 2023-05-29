@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.11</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.caizhen</groupId>
+    <artifactId>project2305</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>project2305</name>
+    <description>主模块</description>
+    <!--  子模块  -->
+    <modules>
+        <!--   公共静态工具   -->
+        <module>project_commonutils</module>
+        <!--        &lt;!&ndash;    子模块管理（父级）    &ndash;&gt;-->
+        <!--        <module>reeko_module</module>-->
+        <!--        &lt;!&ndash;    认证模块    &ndash;&gt;-->
+        <!--        <module>reeko_auth</module>-->
+        <!--   公共全局配置中心   -->
+        <module>project_config</module>
+        <!--        &lt;!&ndash;    鉴权-自动化模块    &ndash;&gt;-->
+        <!--        <module>reeko_authorize</module>-->
+        <!--    网关模块   -->
+        <module>project_gateway</module>
+        <!--   公共实体模块  -->
+        <module>project_pojo</module>
+        <!--        &lt;!&ndash;    websocket模块    &ndash;&gt;-->
+        <!--        <module>reeko_websocket</module>-->
+        <!--        &lt;!&ndash;    远程调用中心模块    &ndash;&gt;-->
+        <!--        <module>reeko_remote</module>-->
+        <!--   自动生成模块   -->
+        <module>base_generator</module>
+        <!--  文件模块   -->
+        <module>project_file</module>
+        <!--  公共mvc模块 -->
+        <module>project_mvc</module>
+        <!--  api服务模块 -->
+        <module>project_api</module>
+
+    </modules>
+
+    <properties>
+        <!--   项目代码版本     -->
+        <canonzhen.version>0.0.1-SNAPSHOT</canonzhen.version>
+        <!--   jdk版本     -->
+        <java.version>1.8</java.version>
+        <!--   构建编译     -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!--   springBoot版本     -->
+        <spring-boot.version>2.7.11</spring-boot.version>
+        <!--   springCloud 版本     -->
+        <spring-cloud.version>2021.0.4</spring-cloud.version>
+        <spring-cloud-starter.version>3.1.4</spring-cloud-starter.version>
+        <!--    springCloudAlibaba版本    -->
+        <spring-cloud-alibaba.version>2021.0.4.0</spring-cloud-alibaba.version>
+        <!-- mybatis -->
+        <mybatis-spring-boot.version>3.0.0</mybatis-spring-boot.version>
+        <mybatis-plus-version>3.5.3.1</mybatis-plus-version>
+        <velocity-engine-version>2.3</velocity-engine-version>
+        <freemarker-enginee-version>2.3.31</freemarker-enginee-version>
+        <!--  测试  -->
+        <junit-version>4.13.2</junit-version>
+        <junit-jupiter-version>5.8.2</junit-jupiter-version>
+        <!-- AOP -->
+        <AOP-version>5.1.9.RELEASE</AOP-version>
+        <spring-context-version>5.1.9.RELEASE</spring-context-version>
+        <!-- fastjson 解析支持 -->
+        <fastjson-varsion>2.0.9</fastjson-varsion>
+        <!--  redis支持  -->
+        <redis-version>3.0.2</redis-version>
+    </properties>
+
+    <dependencies>
+
+        <!--  lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--  springcloud alibaba -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter</artifactId>
+                <version>${spring-cloud-starter.version}</version>
+            </dependency>
+
+            <!-- 引入全局springBooot版本支持  -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!--mysql-->
+            <dependency>
+                <groupId>com.mysql</groupId>
+                <artifactId>mysql-connector-j</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

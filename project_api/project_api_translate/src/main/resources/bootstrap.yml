@@ -1,0 +1,12 @@
+#server:
+#  port: 8084
+#  servlet:
+#    context-path: /
+# 以上内容丢进nacos配置中心了
+spring:
+  application:
+    name: service-api-translate  # 服务名称
+  profiles:
+    active: dev #开发环境，这里是dev
+
+

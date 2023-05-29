@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="project_gateway" />
+        <module name="base_generator" />
+        <module name="project_pojo" />
+        <module name="project_file" />
+        <module name="project_api_user" />
+        <module name="project_api_translate" />
+        <module name="project_config" />
+        <module name="project_mvc" />
+        <module name="project_commonutils" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="base_generator" options="-parameters" />
+      <module name="project_api_translate" options="-parameters" />
+      <module name="project_api_user" options="-parameters" />
+      <module name="project_commonutils" options="-parameters" />
+      <module name="project_config" options="-parameters" />
+      <module name="project_file" options="-parameters" />
+      <module name="project_gateway" options="-parameters" />
+      <module name="project_mvc" options="-parameters" />
+      <module name="project_pojo" options="-parameters" />
+    </option>
+  </component>
+</project>

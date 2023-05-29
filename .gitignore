@@ -1,0 +1,9 @@
+# Project exclude paths
+/project_api/project_api_translate/target/
+/project_api/project_api_user/target/
+/project_commonutils/target/
+/project_config/target/
+/project_file/target/
+/project_gateway/target/
+/project_mvc/target/
+/project_pojo/target/

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/base_generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project_api/project_api_translate/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project_api/project_api_user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project_api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project_api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project_commonutils/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project_config/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project_file/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project_gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project_mvc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/project_pojo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
