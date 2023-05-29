@@ -13,7 +13,7 @@ import org.springframework.core.env.Environment;
 /**
  * @author caizhen
  */
-@EnableFeignClients
+@EnableFeignClients(basePackages = {"com.caizhen.feign"})
 @EnableDiscoveryClient
 @Slf4j
 @ComponentScan(basePackages = {"com.caizhen.api_translate","com.caizhen.mvc","com.caizhen.pojo",

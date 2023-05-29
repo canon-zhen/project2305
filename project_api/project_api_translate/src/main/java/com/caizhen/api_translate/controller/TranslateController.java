@@ -3,6 +3,7 @@ package com.caizhen.api_translate.controller;
 
 
 import com.caizhen.config.annotation.MyLog;
+import com.caizhen.feign.client.UserApiFeignService;
 import com.caizhen.mvc.service.TransApiService;
 import com.caizhen.mvc.service.impl.TransApiServiceImpl;
 import com.caizhen.pojo.entity.Result;
@@ -27,6 +28,35 @@ public class TranslateController {
     private TransApiServiceImpl transApiService;
     @Autowired
     private RestTemplate restTemplate;
+
+    @Autowired
+    private UserApiFeignService userApiFeignService;
+
+    /**
+     * 测试使用openfeign调用user API接口
+     * @return 字符串
+     */
+    @GetMapping("/user-list")
+    public Result userListAll(){
+        Result result = userApiFeignService.userListAll();
+        System.out.println("api-trans-->openfeign 调用api-user 的查询所有用户 ListALL 服务");
+        return result;
+    }
+    /**
+     * 测试 openfeign 调用api-user 的回显服务
+     * @param string 字符串
+     * @return 字符串
+     */
+    @RequestMapping(value = "/user/{string}", method = RequestMethod.GET)
+    public String echoFeignTranslate(@PathVariable String string) {
+        String echoUserFeign = userApiFeignService.echo(string);
+        System.out.println("api-trans-->openfeign 调用api-user 的回显服务");
+        return "api_translate: "+echoUserFeign;
+    }
+
+
+
+
 
     /**
      * 翻译
