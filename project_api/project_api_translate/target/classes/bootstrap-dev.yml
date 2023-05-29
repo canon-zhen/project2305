@@ -1,0 +1,27 @@
+config:
+  info: local-service-api-translate-yaml
+spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/project2305_db?characterEncoding=UTF-8
+#    username: root
+#    password: cz148313
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.171.1:8848
+        namespace: b3eb81be-8ef3-4b41-8d11-3f3a7d6ef3ef
+      config:
+        server-addr: 192.168.171.1:8848
+        file-extension: yaml
+        namespace: b3eb81be-8ef3-4b41-8d11-3f3a7d6ef3ef
+        import-check:
+          enabled: false
+
+#mybatis-plus:
+#  mapper-locations: classpath*:/mapper/*.xml  #注意：一定要对应mapper映射xml文件的所在路径
+#  type-aliases-package: com.caizhen.project230522.pojo.entity  #  注意：对应实体类的路径
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印mybatis-plus的sql语句
+#    #驼峰命名规则
+#    map-underscore-to-camel-case: true

@@ -1,0 +1,13 @@
+#server:
+#  port: 8082
+#  port: 8083
+#  servlet:
+#    context-path: /
+# 以上内容丢进nacos配置中心了
+spring:
+  application:
+    name: service-api-user  # 服务名称
+  profiles:
+    active: dev #开发环境，这里是dev
+
+

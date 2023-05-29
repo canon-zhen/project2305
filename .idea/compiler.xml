@@ -14,6 +14,7 @@
         <module name="project_api_user" />
         <module name="project_api_translate" />
         <module name="project_config" />
+        <module name="project_feign" />
         <module name="project_mvc" />
         <module name="project_commonutils" />
       </profile>
@@ -26,6 +27,7 @@
       <module name="project_api_user" options="-parameters" />
       <module name="project_commonutils" options="-parameters" />
       <module name="project_config" options="-parameters" />
+      <module name="project_feign" options="-parameters" />
       <module name="project_file" options="-parameters" />
       <module name="project_gateway" options="-parameters" />
       <module name="project_mvc" options="-parameters" />

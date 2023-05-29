@@ -1,4 +1,4 @@
-package com.caizhen.apiuser.feign;
+package com.caizhen.feign.client;
 
 import com.caizhen.pojo.entity.Result;
 import org.springframework.cloud.openfeign.FeignClient;

@@ -42,6 +42,8 @@
         <module>project_mvc</module>
         <!--  api服务模块 -->
         <module>project_api</module>
+        <!--  feign client 模块 -->
+        <module>project_feign</module>
 
     </modules>
 

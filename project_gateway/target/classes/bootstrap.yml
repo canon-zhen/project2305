@@ -1,0 +1,12 @@
+#server:
+#  port: 8975
+#  servlet:
+#    context-path: /
+# 以上内容丢进nacos配置中心了
+spring:
+  application:
+    name: service-gateway  # 服务名
+  profiles:
+    active: dev #开发环境，这里是dev
+
+

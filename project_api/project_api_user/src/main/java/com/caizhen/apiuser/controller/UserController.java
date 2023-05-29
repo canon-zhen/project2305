@@ -1,12 +1,10 @@
 package com.caizhen.apiuser.controller;
 
 
-import com.caizhen.apiuser.feign.TranslateApiFeignService;
-import com.caizhen.commonutils.utils.IpEntity;
 import com.caizhen.commonutils.utils.IpUtils;
 import com.caizhen.commonutils.utils.RedisUtil;
-import com.caizhen.commonutils.utils.IpUtil;
 import com.caizhen.config.annotation.MyLog;
+import com.caizhen.feign.client.TranslateApiFeignService;
 import com.caizhen.mvc.result.ResultFactory;
 import com.caizhen.mvc.service.impl.UserServiceImpl;
 import com.caizhen.pojo.entity.Result;

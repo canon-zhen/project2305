@@ -13,11 +13,12 @@ import org.springframework.core.env.Environment;
 /**
  * @author caizhen
  */
-@EnableFeignClients
+@EnableFeignClients(basePackages = {"com.caizhen.feign"})
 @EnableDiscoveryClient
 @Slf4j
 @ComponentScan(basePackages = {"com.caizhen.apiuser","com.caizhen.mvc","com.caizhen.pojo",
-        "com.caizhen.api_translate", "com.caizhen.config","com.caizhen.commonutils",})
+        "com.caizhen.api_translate", "com.caizhen.config",
+        "com.caizhen.feign","com.caizhen.commonutils",})
 @SpringBootApplication
 @MapperScan(basePackages = "com.caizhen.mvc.mapper")
 public class ProjectApiUserApplication {
